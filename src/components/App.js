@@ -32,8 +32,9 @@ class App extends Component {
         const [hours,minutes,seconds]=[currTime.getHours(),currTime.getMinutes(),currTime.getSeconds()]
        const amOrPm =hours>=12?"PM":"AM"
        const twelveHourFormat=hours>12?hours-12:hours;
-       const hourString=this.paddingTwoDigit(twelveHourFormat);
+      // const hourString=this.paddingTwoDigit(twelveHourFormat);
      //  console.log(hourString)
+     const hourString= twelveHourFormat
        const MinuteString=this.paddingTwoDigit(minutes)
      //  console.log(MinuteString)
        const secondString=this.paddingTwoDigit(seconds)
